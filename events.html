@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>DDSC Events 2025 - Deakin Data Science Club</title>
+  <meta name="description" content="Explore the upcoming events hosted by Deakin Data Science Club (DDSC) in 2025.">
+  <meta name="keywords" content="DDSC, Data Science, AI, Workshops, Hackathons, Deakin University">
+
+  <!-- Favicons -->
+  <link href="assets/img/ddsc-icon.png" rel="icon">
+  <link href="assets/img/ddsc-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="events-page">
+
+  <!-- Include Header -->
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+    <section class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Events 2025</h1>
+        <p>Join us for a series of workshops, networking nights, and competitions throughout the year!</p>
+      </div>
+    </section>
+
+    <section id="events" class="events section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Upcoming Events - 2025</h2>
+          <p>Explore our latest workshops, hackathons, and networking events throughout the year.</p>
+        </div>
+    
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="table-dark text-center">
+              <tr>
+                <th>Month</th>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Type</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>March</td>
+                <td>10<sup>th</sup></td>
+                <td>Introduction to Data Science Workshop</td>
+                <td>Workshop</td>
+                <td>Geelong</td>
+              </tr>
+              <tr>
+                <td>April</td>
+                <td>15<sup>th</sup></td>
+                <td>Networking Evening with Data Science Professionals</td>
+                <td>Networking</td>
+                <td>Geelong</td>
+              </tr>
+              <tr>
+                <td>May</td>
+                <td>5<sup>th</sup> - 16<sup>th</sup></td>
+                <td>Kaggle Competition Participation</td>
+                <td>Competition</td>
+                <td>Online</td>
+              </tr>
+              <tr>
+                <td>June</td>
+                <td>20<sup>th</sup></td>
+                <td>Python for Data Analysis Workshop</td>
+                <td>Workshop</td>
+                <td>Geelong</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>25<sup>th</sup></td>
+                <td>Social Meetup: Trivia Night</td>
+                <td>Social</td>
+                <td>Geelong</td>
+              </tr>
+              <tr>
+                <td>August</td>
+                <td>10<sup>th</sup></td>
+                <td>Data Visualisation Workshop / ML Networking</td>
+                <td>Workshop / Networking</td>
+                <td>Geelong</td>
+              </tr>
+              <tr>
+                <td>September</td>
+                <td>15<sup>th</sup></td>
+                <td>Annual General Meeting (AGM)</td>
+                <td>Meeting</td>
+                <td>Geelong</td>
+              </tr>
+              <tr>
+                <td>October</td>
+                <td>5<sup>th</sup></td>
+                <td>Hackathon: Solving Real-World Data Challenges</td>
+                <td>Competition</td>
+                <td>Geelong</td>
+              </tr>
+              <tr>
+                <td>November</td>
+                <td>10<sup>th</sup></td>
+                <td>End-of-Year Social Gathering</td>
+                <td>Social</td>
+                <td>Geelong</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+      </div>
+    </section>
+  </main>
+
+  <!-- Include Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("partials/header.html").then(response => response.text()).then(data => document.getElementById("header-placeholder").innerHTML = data);
+      fetch("partials/footer.html").then(response => response.text()).then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    });
+  </script>
+
+</body>
+</html>

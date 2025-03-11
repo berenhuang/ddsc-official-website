@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Projects - Deakin Data Science Club (DDSC)</title>
+  <meta name="description" content="Explore past and ongoing projects of DDSC, covering AI, data science, and cybersecurity.">
+  <meta name="keywords" content="DDSC, Data Science, AI, Machine Learning, Cybersecurity, Blockchain, Deakin University">
+
+  <!-- Favicons -->
+  <link href="assets/img/ddsc-icon.png" rel="icon">
+  <link href="assets/img/ddsc-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="projects-page">
+
+  <!-- Include Header -->
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Our Projects</h1>
+        <p>Discover innovative projects led by DDSC members, spanning AI, data science, and cybersecurity.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Projects</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Ongoing Projects Section -->
+    <section id="ongoing-projects" class="projects section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Ongoing Projects</h2>
+          <p>These projects are actively developed by DDSC members.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up">
+            <div class="project-content">
+              <img src="assets/img/projects/project1.jpg" class="img-fluid" alt="AI Chatbot">
+              <h3>AI Chatbot for Student Support</h3>
+              <p>Developing an AI-driven chatbot to assist students with academic queries.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div><!-- End Project Item -->
+
+          <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-content">
+              <img src="assets/img/projects/project2.jpg" class="img-fluid" alt="Blockchain for Secure Voting">
+              <h3>Blockchain-Based Secure Voting</h3>
+              <p>Building a decentralized voting system for secure and transparent elections.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div><!-- End Project Item -->
+
+          <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-content">
+              <img src="assets/img/projects/project3.jpg" class="img-fluid" alt="Cybersecurity Threat Detection">
+              <h3>Cybersecurity Threat Detection</h3>
+              <p>Implementing AI to detect and prevent cyber threats in real-time.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div><!-- End Project Item -->
+
+        </div>
+      </div>
+    </section><!-- /Ongoing Projects Section -->
+
+    <!-- Past Projects Section -->
+    <section id="past-projects" class="projects section light-background">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Past Projects</h2>
+          <p>Completed projects that showcase DDSC’s impact.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up">
+            <div class="project-content">
+              <img src="assets/img/projects/project4.jpg" class="img-fluid" alt="COVID-19 Data Visualization">
+              <h3>COVID-19 Data Visualization</h3>
+              <p>Analyzed and visualized COVID-19 trends using Python and Tableau.</p>
+            </div>
+          </div><!-- End Project Item -->
+
+          <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-content">
+              <img src="assets/img/projects/project5.jpg" class="img-fluid" alt="Deakin Student Insights">
+              <h3>Deakin Student Insights</h3>
+              <p>Developed a data-driven platform to analyze student engagement patterns.</p>
+            </div>
+          </div><!-- End Project Item -->
+
+          <div class="col-lg-4 col-md-6 project-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-content">
+              <img src="assets/img/projects/project6.jpg" class="img-fluid" alt="AI-Powered Resume Screener">
+              <h3>AI-Powered Resume Screener</h3>
+              <p>Created an AI model to assist recruiters in shortlisting candidates efficiently.</p>
+            </div>
+          </div><!-- End Project Item -->
+
+        </div>
+      </div>
+    </section><!-- /Past Projects Section -->
+
+  </main>
+
+  <!-- Include Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Load Header & Footer
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("partials/header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+      fetch("partials/footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Our Team - Deakin Data Science Club (DDSC)</title>
+  <meta name="description" content="Meet the core members of the DDSC team who drive innovation in data science, AI, and cybersecurity.">
+  <meta name="keywords" content="DDSC, Data Science, AI, Machine Learning, Cybersecurity, Team, Deakin University">
+
+  <!-- Favicons -->
+  <link href="assets/img/ddsc-icon.png" rel="icon">
+  <link href="assets/img/ddsc-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="team-page">
+
+  <!-- Include Header -->
+  <div id="header-placeholder"></div>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Our Team</h1>
+        <p>Meet the passionate individuals leading DDSC in driving data science and AI innovation.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Team</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Meet Our Team</h2>
+          <p>Our dedicated leadership team is driving innovation in data science and AI at Deakin University.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <!-- President -->
+          <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up">
+            <!-- <div class="member-img">
+              <img src="assets/img/team/president.jpg" class="img-fluid" alt="President">
+              <div class="social">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="mailto:hosekimbusiness@gmail.com"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div> -->
+            <div class="member-info text-center">
+              <h4>Ho-se Kim</h4>
+              <span>President</span>
+              <p>Leading DDSC with a vision for data-driven innovation and community building.</p>
+              <p><strong>Mail:</strong> <a href="mailto:hosekimbusiness@gmail.com">hosekimbusiness@gmail.com <i class="bi bi-envelope"></i></a></p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <!-- Treasurer -->
+          <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up" data-aos-delay="100">
+            <!-- <div class="member-img">
+              <img src="assets/img/team/treasurer.jpg" class="img-fluid" alt="Treasurer">
+              <div class="social">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="mailto:berenhuang@gmail.com"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div> -->
+            <div class="member-info text-center">
+              <h4>Hao Huang</h4>
+              <span>Treasurer</span>
+              <p>Managing finances to support DDSC’s events and initiatives.</p>
+              <p><strong>Mail:</strong> <a href="mailto:berenhuang@gmail.com">berenhuang@gmail.com <i class="bi bi-envelope"></i></a></p>
+
+            </div>
+          </div><!-- End Team Member -->
+
+          <!-- Secretary -->
+          <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up" data-aos-delay="200">
+            <!-- <div class="member-img">
+              <img src="assets/img/team/secretary.jpg" class="img-fluid" alt="Secretary">
+              <div class="social">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="mailto:thaaru1220@gmail.com"><i class="bi bi-envelope"></i></a>
+              </div>
+            </div> -->
+            <div class="member-info text-center">
+              <h4>Tharaka Madushanka Gamage</h4>
+              <span>Secretary</span>
+              <p>Coordinating club activities and ensuring smooth operations.</p>
+              <p><strong>Mail:</strong> <a href="mailto:thaaru1220@gmail.com">thaaru1220@gmail.com <i class="bi bi-envelope"></i></a></p>
+
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+      </div>
+    </section><!-- /Team Section -->
+
+  </main>
+
+  <!-- Include Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Load Header & Footer
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("partials/header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+      fetch("partials/footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    });
+  </script>
+
+</body>
+</html>
