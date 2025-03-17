@@ -16,6 +16,30 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .team-member {
+      text-align: center;
+    }
+    .team-member h4 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+    .team-member span {
+      font-weight: 500;
+      color: #555;
+    }
+    .team-member p {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 
 <body class="team-page">
@@ -29,7 +53,7 @@
     <div class="page-title dark-background">
       <div class="container position-relative">
         <h1>Our Team</h1>
-        <p>Meet the passionate individuals leading DDSC in driving data science and AI innovation.</p>
+        <p>Meet the passionate individuals leading DDSC in data science and AI innovation.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -42,68 +66,59 @@
     <!-- Team Section -->
     <section id="team" class="team section">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
           <h2>Meet Our Team</h2>
-          <p>Our dedicated leadership team is driving innovation in data science and AI at Deakin University.</p>
+          <p>Our leadership team is dedicated to fostering innovation in data science at Deakin University.</p>
         </div>
 
-        <div class="row gy-5">
+        <div class="row gy-5 justify-content-center">
 
           <!-- President -->
           <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up">
-            <!-- <div class="member-img">
-              <img src="assets/img/team/president.jpg" class="img-fluid" alt="President">
-              <div class="social">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="mailto:hosekimbusiness@gmail.com"><i class="bi bi-envelope"></i></a>
-              </div>
-            </div> -->
-            <div class="member-info text-center">
-              <h4>Ho-se Kim</h4>
-              <span>President</span>
-              <p>Leading DDSC with a vision for data-driven innovation and community building.</p>
-              <p><strong>Mail:</strong> <a href="mailto:hosekimbusiness@gmail.com">hosekimbusiness@gmail.com <i class="bi bi-envelope"></i></a></p>
-            </div>
+            <img src="assets/img/team/ho-se.jpg" alt="Ho-se Kim">
+            <h4>Ho-se Kim</h4>
+            <span>President</span>
+            <p><strong>Degree:</strong> Master of Data Science (Professional)</p>
           </div><!-- End Team Member -->
 
           <!-- Treasurer -->
           <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up" data-aos-delay="100">
-            <!-- <div class="member-img">
-              <img src="assets/img/team/treasurer.jpg" class="img-fluid" alt="Treasurer">
-              <div class="social">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="mailto:berenhuang@gmail.com"><i class="bi bi-envelope"></i></a>
-              </div>
-            </div> -->
-            <div class="member-info text-center">
-              <h4>Hao Huang</h4>
-              <span>Treasurer</span>
-              <p>Managing finances to support DDSC’s events and initiatives.</p>
-              <p><strong>Mail:</strong> <a href="mailto:berenhuang@gmail.com">berenhuang@gmail.com <i class="bi bi-envelope"></i></a></p>
-
-            </div>
+            <img src="assets/img/team/hao-huang.png" alt="Hao Huang">
+            <h4>Hao Huang</h4>
+            <span>Treasurer</span>
+            <p><strong>Degree:</strong> Master of Cybersecurity</p>
           </div><!-- End Team Member -->
 
           <!-- Secretary -->
           <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up" data-aos-delay="200">
-            <!-- <div class="member-img">
-              <img src="assets/img/team/secretary.jpg" class="img-fluid" alt="Secretary">
-              <div class="social">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="mailto:thaaru1220@gmail.com"><i class="bi bi-envelope"></i></a>
-              </div>
-            </div> -->
-            <div class="member-info text-center">
-              <h4>Tharaka Madushanka Gamage</h4>
-              <span>Secretary</span>
-              <p>Coordinating club activities and ensuring smooth operations.</p>
-              <p><strong>Mail:</strong> <a href="mailto:thaaru1220@gmail.com">thaaru1220@gmail.com <i class="bi bi-envelope"></i></a></p>
+            <img src="assets/img/team/tharaka.png" alt="Tharaka Madushanka">
+            <h4>Tharaka Madushanka</h4>
+            <span>Secretary</span>
+            <p><strong>Degree:</strong> Master of Cybersecurity</p>
+          </div><!-- End Team Member -->
 
-            </div>
+          <!-- Ghasem (Sam) Ahmadi -->
+          <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/team/sam-ahmadi.jpg" alt="Ghasem (Sam) Ahmadi">
+            <h4>Ghasem (Sam) Ahmadi</h4>
+            <span>Team Member</span>
+            <p><strong>Degree:</strong> Master of Data Science</p>
+          </div><!-- End Team Member -->
+
+          <!-- Benjamin (Benny) Pritchard -->
+          <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up" data-aos-delay="400">
+            <img src="assets/img/team/benny-pritchard.jpg" alt="Benjamin (Benny) Pritchard">
+            <h4>Benjamin (Benny) Pritchard</h4>
+            <span>Team Member</span>
+            <p><strong>Degree:</strong> Information Technology</p>
+          </div><!-- End Team Member -->
+
+          <!-- Duy Vo (Danny Vo) -->
+          <div class="col-lg-4 col-md-6 team-member" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/img/team/danny-vo.jpg" alt="Duy Vo (Danny Vo)">
+            <h4>Duy Vo (Danny Vo)</h4>
+            <span>HR & Relationship Manager</span>
+            <p><strong>Degree:</strong> Master of Data Science</p>
           </div><!-- End Team Member -->
 
         </div>
