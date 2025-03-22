@@ -23,7 +23,6 @@
   <!-- Include Header -->
   <div id="header-placeholder"></div>
   
-
   <main class="main">
 
   <!-- Hero Section -->
@@ -36,7 +35,12 @@
           <div class="carousel-container text-center">
             <h2>Welcome to Deakin Data Science Club (DDSC)</h2>
             <p>Join our community of data enthusiasts, AI innovators, and tech leaders. Participate in workshops, hackathons, and real-world projects.</p>
-            <a href="about.html" class="btn-get-started">Learn More</a>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="https://discord.gg/EjE52fnQ5X" class="btn-get-started" target="_blank">
+                <i class="bi bi-discord"></i> Join Now
+              </a>
+              <a href="about.html" class="btn-get-started btn-outline">Learn More</a>
+            </div>
           </div>
         </div>
 
@@ -70,6 +74,41 @@
         <!-- Carousel Indicators -->
         <ol class="carousel-indicators"></ol>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- Join DDSC Section -->
+  <section id="join" class="join section" style="background-color: #1a1a1a; color: #f5f5f5;">
+    <div class="container">
+      <h2>Join DDSC</h2>
+      <div class="row gy-4">
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <h3>Become a Member</h3>
+          <p>Join the official Deakin Data Science Club to connect with like-minded students, develop your skills, and explore career opportunities in data science and AI.</p>
+          
+          <div class="certification-badge mb-4">
+            <i class="bi bi-patch-check"></i>
+            Officially certified by 
+            <a href="https://www.dusa.org.au/clubs/deakin-data-science-club-geelong-ddsc" target="_blank">
+              Deakin University Student Association (DUSA)
+            </a>
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="cta-box p-4" style="background-color: #262626; color: #f5f5f5;">
+            <h4>Ready to Join?</h4>
+            <div class="d-grid gap-3">
+              <a href="https://discord.gg/EjE52fnQ5X" class="btn btn-primary" target="_blank">
+                <i class="bi bi-discord"></i> Join Our Discord
+              </a>
+              <a href="https://www.dusa.org.au/clubs/deakin-data-science-club-geelong-ddsc" class="btn btn-success" target="_blank">
+                <i class="bi bi-person-plus"></i> Join via DUSA
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -111,27 +150,42 @@
             <h3>Industry Talks</h3>
             <p>Hear from data scientists at top companies and learn about career opportunities.</p>
           </div>
+          </div>
         </div>
-
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <div class="certification-badge">
+            <i class="bi bi-patch-check"></i>
+            Officially certified by 
+            <a href="https://www.dusa.org.au/clubs/deakin-data-science-club-geelong-ddsc" target="_blank">
+              Deakin University Student Association (DUSA)
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about section light-background">
+  <section id="about" class="about section" style="background-color: #1a1a1a; color: #f5f5f5;">
     <div class="container">
       <h2>About DDSC</h2>
       <div class="row gy-4">
         <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          <img src="assets/img/about.avif" class="img-fluid" alt="">
         </div>
         <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-          <h3>Empowering Future Data Scientists</h3>
-          <p class="fst-italic">We provide hands-on learning experiences, industry connections, and a supportive community for aspiring data scientists.</p>
+          <h3>Who We Are</h3>
+          <p>
+            Are you ready to shape the future? Join the Deakin Data Science Club (DDSC) and unlock the potential of data to transform the world! Whether you're just starting out or already diving into the numbers, DDSC is your ultimate gateway to the exciting fields of data science, artificial intelligence, and IT.
+          </p>
+          <h4>What You'll Gain</h4>
           <ul>
-            <li><i class="bi bi-check2-all"></i> Hands-on projects and coding challenges.</li>
-            <li><i class="bi bi-check2-all"></i> Industry networking events and mentorship.</li>
-            <li><i class="bi bi-check2-all"></i> Career development through workshops and real-world case studies.</li>
+            <li><i class="bi bi-check2-all"></i> Key skills in programming, data analytics, and AI</li>
+            <li><i class="bi bi-check2-all"></i> Exclusive access to industry professionals through networking events</li>
+            <li><i class="bi bi-check2-all"></i> Real-world experience through competitions and projects</li>
+            <li><i class="bi bi-check2-all"></i> A vibrant, supportive community that encourages collaboration and growth</li>
           </ul>
         </div>
       </div>
@@ -142,7 +196,6 @@
   <section id="features" class="features section">
     <div class="container section-title" data-aos="fade-up">
       <h2>Why Join DDSC?</h2>
-      <p>Discover how DDSC can accelerate your learning and career in data science.</p>
     </div>
 
     <div class="container">
@@ -152,7 +205,17 @@
         </div>
         <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
           <h3>Learn from Experts</h3>
-          <p>Gain knowledge from experienced professionals and industry leaders.</p>
+          <p class="mb-3">Gain knowledge from experienced professionals and industry leaders through:</p>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-2">
+              <i class="bi bi-check-circle me-2"></i>
+              Exclusive workshops & events
+            </li>
+            <li class="d-flex align-items-center mb-0">
+              <i class="bi bi-check-circle me-2"></i>
+              Access to expert mentors
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -162,7 +225,17 @@
         </div>
         <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
           <h3>Real-World Projects</h3>
-          <p>Work on real industry projects and build a portfolio that stands out.</p>
+          <p class="mb-3">Work on real industry projects and build a portfolio that stands out through:</p>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-2">
+              <i class="bi bi-check-circle me-2"></i>
+              Hands-on projects & hackathons
+            </li>
+            <li class="d-flex align-items-center mb-0">
+              <i class="bi bi-check-circle me-2"></i>
+              Collaborative learning environment
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -172,7 +245,17 @@
         </div>
         <div class="col-md-7" data-aos="fade-up">
           <h3>Collaborate & Network</h3>
-          <p>Join a vibrant community of students passionate about data science and AI.</p>
+          <p class="mb-3">Join a vibrant community of students passionate about data science and AI with:</p>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-2">
+              <i class="bi bi-check-circle me-2"></i>
+              Industry networking opportunities
+            </li>
+            <li class="d-flex align-items-center mb-0">
+              <i class="bi bi-check-circle me-2"></i>
+              Career development resources
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -202,4 +285,3 @@
   </script>
 
 </body>
-</html>

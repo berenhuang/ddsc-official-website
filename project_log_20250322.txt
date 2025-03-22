@@ -1,0 +1,39 @@
+Deakin Data Science Club Website Update Log
+Date: March 22, 2025
+
+1. Project Structure Analysis
+   - Reviewed complete project file structure
+   - Verified locations of all HTML and resource files
+
+2. Discord Link Update
+   - In partials/footer.html and contact.html
+   - Updated old Discord link https://discord.gg/e49dRKPb
+     to https://discord.gg/EjE52fnQ5X
+
+3. External Link Check
+   - Scanned all HTML files for external links
+   - Verified validity of all links
+
+4. Homepage Update
+   - Added "Join DDSC" section
+   - Initially placed at top of page
+   - Later moved between Hero Section and Upcoming Events
+
+5. Background Image Processing
+   - Modified CSS styles
+   - Provided two solutions:
+     a) Show original image colors
+     b) Apply black base to any image
+   - Currently using black base solution
+
+6. CSS Fixes
+   - Fixed z-index property syntax error
+   - Ensured all CSS rules are valid
+
+7. Project Optimization Suggestions
+   - Proposed technology stack improvements
+   - Suggested performance optimization measures
+   - Planned feature enhancements
+
+Summary:
+Today's work focused on core website updates and style optimizations, particularly the Discord link update and homepage layout improvements. Also fixed CSS syntax errors and implemented flexible solutions for background image processing.

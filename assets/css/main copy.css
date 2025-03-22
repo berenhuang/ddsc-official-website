@@ -19,94 +19,37 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #1a1a1a; /* Background color for the entire website, including individual sections */
-  --default-color: #f5f5f5; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1e90ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #262626; /* The surface color is used as a background of boxed elements within sections, such cards, icon boxes, or other elements that require a visual separation from the global background */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors */
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #555555; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #1e4356; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #68a4c4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Header Styles */
-.header {
-  --background-color: rgba(255, 255, 255, 0);
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #68a4c4; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #555555; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #68a4c4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f4f8fb;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #1e4356;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 15px 0;
-  transition: all 0.5s;
-  z-index: 997;
-}
-
-/* Hero Section */
-.hero {
-  width: 100%;
-  min-height: 80vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: transparent;
-}
-
-/* Solution 1: Show original image colors */
-/*
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 130%;
-  height: 95%;
-  background: url("../img/hero-bg-new.jpg") center top no-repeat;
-  background-size: cover;
-  z-index: 0;
-  border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) rotate(0deg);
-}
-*/
-
-/* Solution 2: Make any image appear with a black base */
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 130%;
-  height: 95%;
-  background: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/hero-bg-new.jpg") center top no-repeat;
-  background-size: cover;
-  z-index: 0;
-  border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) rotate(0deg);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 130%;
-  height: 96%;
-  background: var(--background-color);
-  opacity: 0.3;
-  z-index: 0;
-  border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) translateY(18px) rotate(2deg);
-}
-
-/* Rest of the CSS remains unchanged */
-.hero::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 130%;
-  height: 96%;
-  background: var(--background-color);
+  --surface-color: #284e62;
+  --contrast-color: #ffffff;
 }
 
 /* Smooth scroll */
@@ -837,22 +780,10 @@ section,
   padding: 60px 0;
   scroll-margin-top: 90px;
   overflow: clip;
-  position: relative;
-}
-
-section + section,
-.section + .section {
-  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-  margin-top: -1px;
-}
-
-.featured-services,
-.about,
-.join {
-  background-color: var(--surface-color);
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 66px;
@@ -926,7 +857,7 @@ section + section,
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 100%), var(--background-color)), url("../img/hero-bg-new23.jpg") center top no-repeat;
+  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg.jpg") center top no-repeat;
   background-size: cover;
   z-index: 0;
   border-radius: 0 0 50% 50%;
@@ -1265,8 +1196,6 @@ section + section,
 
 .features .features-item+.features-item {
   margin-top: 100px;
-  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-  padding-top: 100px;
 }
 
 @media (max-width: 640px) {
